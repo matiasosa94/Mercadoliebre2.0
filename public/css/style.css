@@ -1,0 +1,280 @@
+*{box-sizing: border-box;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    background-color: #EAC926;
+    margin-top: 0 auto;
+    width: 100%;    
+}
+
+main{
+    width: 90%;
+    align-items: center;
+    margin:auto;
+}
+
+.logo{
+    width:250px;
+    margin:auto;
+}
+
+.barra{
+   display: flex;
+   justify-content: center;  
+}
+
+.titulo{
+    text-align: center;
+}
+
+.titulo span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista1{
+    display: none;
+    justify-content:space-between;
+    padding: 0;
+    color: #03264C;
+}
+
+.navegador a{
+    text-decoration: none;
+    color: #03264C;
+    padding: 5px;
+}
+
+section .banner{
+    display: block;
+    width:100%;
+    }
+
+.hamburguesa{
+    background-color:  #03264C;
+    color: white;
+    border-radius: 10%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+.visit-box, .off-box{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;  
+    width: 90%;
+    margin:auto;
+}
+
+.visit-box .cajaD:hover ,
+.off-box .cajaD:hover  {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+main h2, main h2{
+    align-self: left;
+    font-weight:bolder;
+    color: #666;
+}
+
+
+.cajaD{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    max-width: 250px;
+    
+    background-color: white;
+    position: relative;
+    width:90%;
+}
+
+.cajaD p,h4{
+    margin:3px;
+}
+
+main div.cajaD h4{
+    color:#666;
+}
+
+.camion{
+    color: rgb(44, 197, 23);;
+    margin-bottom: 5px;
+    margin-left: 3%;
+    position: absolute;
+    right: 20px;
+    top:240px;
+    transform:none;
+    transition: transform .8s;
+    display: block;
+    border:solid 1px rgb(44, 197, 23);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.cajaD:hover .camion{
+    transform: rotate(-360deg);
+}
+
+.precios{
+    font-size: 18px;
+    font-weight: bold;
+    color:#666
+}
+
+.off{
+    color: rgb(44, 197, 23);
+    font-weight: bolder;
+}
+
+.footer{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer h4 {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.regalo, .tarjeta, .shield{
+    color:#1259c3;
+    font-size: 2em;
+    display: flex;
+    margin: auto;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width:480px){
+        
+    .hamburguesa{
+        display: none;
+    }
+
+    .lista1{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        list-style-type: none;
+        padding: 0;
+        color: #03264C;
+        font-weight: bold;
+        width: 80%;
+        align-items:center;
+        margin:auto;
+    }
+    
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    .barra{
+        display: block;
+        margin:0px;
+    }
+
+}
+
+@media(min-width:860px){
+    .top-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .barra{
+        display: block;
+        width: 30%;
+        font-size: 20px;
+    }
+
+    .titulo{
+        display: flex;
+        margin: 0px;
+    }
+    
+    .navegador{
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista1{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        list-style-type: none;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: #03264C;
+        font-size: 1.5vw;
+        font-weight: bold;
+        align-items: center;
+        width: 80%;
+    }
+
+    .visit-box, .off-box{
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;  
+    }
+
+    .footer{
+        background-color: #ebebeb;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .footer div{
+        flex-direction: column;
+    }
+    
+    main div.cajaD h4{
+        color:#666;
+        display: none;
+    }
+    
+    main div .cajaD:hover h4{
+        display: block;
+    }
+
+}
