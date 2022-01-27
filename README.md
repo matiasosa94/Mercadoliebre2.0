@@ -3,4 +3,4 @@
 ***
 Este es el primer trabajo para subir a GitHub de la cursada Full Stack Node en DigitalHouse. 
 ***
-Uso basico de HTML, CSS y express. 
+Uso basico de HTML, CSS y JS. 
