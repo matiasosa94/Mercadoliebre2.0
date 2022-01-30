@@ -179,6 +179,45 @@ footer p{
     justify-content: center;
 }
 
+#formularioIngreso{
+    display: flex;
+    flex-direction: column;
+    background-color:#ebebeb;
+    justify-content:center;
+    align-items: center;
+    width:80%;  
+    margin:auto;
+    border-radius: 5%;
+}
+
+#formularioIngreso div h4{
+    margin-top: 20px;
+}
+
+#formularioIngreso form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: inherit;
+}
+
+#formularioIngreso form input{
+    border-inline: unset;
+    border-block-style: none;
+    height: 10vh;
+    border-radius: 5px;
+}
+
+
+#botonlogin{
+    background-color: #1259c3;
+    color: white;
+    width: 50%;
+    margin: auto;
+    height: 200px;
+}
+
+
 @media(min-width:480px){
         
     .hamburguesa{

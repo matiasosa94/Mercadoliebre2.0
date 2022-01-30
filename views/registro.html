@@ -46,7 +46,27 @@
     </header>
     
     <main>
-
+        <br>
+        <div id="formularioIngreso">
+            <div>
+                <h4>¡Hola! Creá tu cuenta</h4>
+            </div>
+            <form action="/login-usuario" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre y Apellido"><br><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                <input type="text" name="usuario" placeholder="Nombre de usuari@"><br><br>
+                <div>
+                    <input type="password" name="pass" placeholder="Contraseña" style="width: 95%;"><i class="far fa-eye-slash"></i> 
+                </div><br><br>
+                <div>
+                    <input type="password" name="pass" placeholder="Confirmar contraseña" style="width: 95%;"><i class="far fa-eye-slash"></i> 
+                </div><br><br>
+                <input type="text" name="celular" placeholder="Nro. Teléfono"><br><br>
+                <input type="text" name="direction" placeholder="Dirección"><br><br>
+                <input type="checkbox"> Acepto los <a href="#">términos y condiciones</a></input><br><br>
+                <input id="botonlogin" class="submit-form" type="submit" value="Registrarse"><br><br>
+            </form>
+        </div>
     </main>
     <footer>
         <div class="footer">
