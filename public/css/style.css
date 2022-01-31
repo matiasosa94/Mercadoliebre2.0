@@ -314,7 +314,7 @@ footer p{
     }
     
     main div .cajaD:hover h4{
-        display: block;
+        display:  flex;
     }
 
 }
