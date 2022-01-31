@@ -7,7 +7,7 @@ console.log(__dirname)
 
 app.use(express.static(publicPath));
 
-app.listen(3035, () => {
+app.listen(process.env.PORT || 3035, () => {
     console.log("Servidor corriendo")
 });
 
